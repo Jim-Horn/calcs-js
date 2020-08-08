@@ -17,6 +17,8 @@ export default function (arr) {
     }
 
     return {
+        input: arr,
         mean: mathFns.avg(arr),
+        stdDev: mathFns.stdDev(arr),
     };
 }
