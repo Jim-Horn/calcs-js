@@ -16,7 +16,8 @@
         "clean": "rimraf dist",
         "build": "yarn clean && parcel build --no-source-maps index.html",
         "test": "jest",
-        "test:watch": "jest --watch --verbose"
+        "test:watch": "jest --watch --verbose",
+        "test:coverage": "jest --coverage"
     },
     "keywords": [],
     "author": "Jim Horn <jim@jdhorn.com> (https://www.jdhorn.com)",
