@@ -95,7 +95,7 @@ describe(`mathFns.getNumbers functionality`, () => {
         },
         {
             arg: makeObj(['a', 1, 8.795]),
-            result: [1, 8.795],
+            result: [1],
         },
     ].forEach(runTest);
 
