@@ -13,7 +13,7 @@ describe('calcs - basic argument tests', () => {
     });
 
     test('expects all array elements to be integers', () => {
-        expect(calcs([1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2, 1])).toEqual({});
+        expect(calcs([1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2, 1])).toEqual({ mean: 3.769230769230769 });
 
         expect(calcs([1, 2, 3, 4.6, 5, 6, 7, 8, 9, 10, 11, 12, 13])).toEqual(
             'expected all Array elements to be integers, received: [1,2,3,4.6,5,6,7,8,9,10,11,12,13]'
@@ -25,7 +25,7 @@ describe('calcs - basic argument tests', () => {
     });
 
     test('expects all array elements to be in the range of 1-7', () => {
-        expect(calcs([1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2, 1])).toEqual({});
+        expect(calcs([1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2, 1])).toEqual({ mean: 3.769230769230769 });
         expect(calcs([0, 1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2])).toEqual(
             `expected all Array elements to be greater than 0 and less than 8, received: [0,1,2,3,4,5,6,7,6,5,4,3,2]`
         );

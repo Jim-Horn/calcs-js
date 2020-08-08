@@ -1,3 +1,4 @@
+import { mathFns } from '../utils';
 export default function (arr) {
     if (!Array.isArray(arr)) {
         return `expected an Array, received ${typeof arr}: ${arr}`;
@@ -15,5 +16,7 @@ export default function (arr) {
         return `expected all Array elements to be greater than 0 and less than 8, received: ${JSON.stringify(arr)}`;
     }
 
-    return {};
+    return {
+        mean: mathFns.avg(arr),
+    };
 }
