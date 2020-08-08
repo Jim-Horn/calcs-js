@@ -100,7 +100,7 @@ describe(`mathFns.getNumbers functionality`, () => {
     ].forEach(runTest);
 
     function runTest({ arg, result }) {
-        test(`extracting numbers from ${JSON.stringify(arg)} should equal ${JSON.stringify(result)}`, () => {
+        test(`extracting numbers from ${JSON.stringify(arg)} should equal [${result}]`, () => {
             expect(mathFns.getNumbers(arg)).toEqual(result);
         });
     }

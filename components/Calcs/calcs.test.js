@@ -1,7 +1,7 @@
 import calcs from './calcs';
 
 describe('calcs - basic argument tests', () => {
-    test('expects an array as an argument', () => {
+    test('expects an array as a parameter', () => {
         expect(calcs('foo')).toBe('expected an Array, received string: foo');
         expect(calcs(5)).toBe(`expected an Array, received number: 5`);
         expect(calcs({})).toBe(`expected an Array, received object: [object Object]`);
