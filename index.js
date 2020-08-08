@@ -1,8 +1,3 @@
-import React from 'react';
-import { render } from 'react-dom';
-import Start from './components/Start';
+import Calcs from './components/Calcs';
 
-const DefaultView = () => {
-    return <Start />;
-};
-render(<DefaultView />, document.getElementById('base-target'));
+window.calcs = Calcs;
